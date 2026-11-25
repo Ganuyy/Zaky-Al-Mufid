@@ -1,0 +1,71 @@
+/**
+ * Gaya cetak struk thermal (58 mm / 80 mm).
+ * Saat mencetak, hanya area struk yang tampil.
+ */
+
+@media print {
+    @page {
+        margin: 0;
+    }
+
+    html,
+    body {
+        background: #fff !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    /* Sembunyikan seluruh halaman, lalu tampilkan hanya struk. */
+    body * {
+        visibility: hidden !important;
+    }
+
+    .receipt-printable,
+    .receipt-printable * {
+        visibility: visible !important;
+    }
+
+    .no-print,
+    .receipt-toolbar,
+    .receipt-actions {
+        display: none !important;
+    }
+
+    .receipt-scroll {
+        display: block !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    .receipt-printable {
+        position: absolute !important;
+        left: 0 !important;
+        top: 0 !important;
+        box-shadow: none !important;
+        border: none !important;
+        box-sizing: border-box;
+        padding: 3mm 2mm !important;
+        color: #000 !important;
+        background: #fff !important;
+        font-family: 'Courier New', 'Consolas', monospace !important;
+    }
+
+    .receipt-printable.receipt-58 {
+        width: 58mm !important;
+        font-size: 11px !important;
+    }
+
+    .receipt-printable.receipt-80 {
+        width: 80mm !important;
+        font-size: 12px !important;
+    }
+
+    .receipt-printable .r-line {
+        border-top: 1px dashed #000 !important;
+    }
+
+    .receipt-printable .r-total {
+        border-top: 1px solid #000 !important;
+        border-bottom: 1px solid #000 !important;
+    }
+}

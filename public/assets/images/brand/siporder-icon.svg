@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="SipOrder">
+  <defs>
+    <linearGradient id="soCupDark" x1="18" y1="24" x2="44" y2="55" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#A65B25"/>
+      <stop offset="1" stop-color="#71350F"/>
+    </linearGradient>
+  </defs>
+  <g fill="none" stroke="#A65B25" stroke-width="2.6" stroke-linecap="round">
+    <path d="M25 18.5c-2.8-3.2 2.4-4.8-.4-8.4"/>
+    <path d="M33 16.5c-2.8-3.2 2.4-4.8-.4-8.4"/>
+    <path d="M41 18.5c-2.8-3.2 2.4-4.8-.4-8.4"/>
+  </g>
+  <path d="M45.5 29.5h3.2a7 7 0 0 1 0 14h-3.6" fill="none" stroke="#71350F" stroke-width="3.4" stroke-linecap="round"/>
+  <path d="M12.5 25h33.5l-2.5 17.4A13 13 0 0 1 30.6 54h-.7A13 13 0 0 1 16.9 42.4Z" fill="url(#soCupDark)"/>
+  <ellipse cx="29.25" cy="25" rx="16.75" ry="2.9" fill="#4B250F"/>
+  <path d="M10.5 56h38" fill="none" stroke="#4B250F" stroke-width="3" stroke-linecap="round"/>
+  <path d="M31.3 32.4c3.1-.7 5.9 1.9 4.8 4.9-1 2.6-4.4 3.3-6.5 1.7-2.1-1.6-1.5-5.7 1.7-6.6Z" fill="#F8EDE0" opacity=".9"/>
+  <path d="M32.6 33.6c-1.4 1.2-2.4 2.8-2.7 4.6" fill="none" stroke="#A65B25" stroke-width="1.2" stroke-linecap="round"/>
+</svg>

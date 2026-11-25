@@ -1,0 +1,13 @@
+# Arahkan semua request ke folder public/ (document root aplikasi).
+# Dengan ini Anda dapat mengakses http://localhost/kopi-pintar
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # Lewatkan request yang sudah di folder public agar ditangani public/.htaccess
+    RewriteRule ^public/ - [L]
+
+    # Sisanya arahkan ke front controller di public/
+    RewriteRule ^(.*)$ public/index.php [L]
+</IfModule>
+
+Options -Indexes

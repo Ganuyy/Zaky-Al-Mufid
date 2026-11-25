@@ -1,0 +1,30 @@
+# Environment / secrets
+.env
+*.env.local
+
+# OS
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Logs & temp
+storage/logs/*
+!storage/logs/.gitkeep
+
+# Installer / binary sampah
+sql/*.exe
+*.exe
+*.msi
+
+# IDE
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Dependency (jika ada)
+vendor/
+node_modules/
+
+# Upload runtime
+storage/uploads/
